@@ -1,0 +1,7 @@
+<form method="post" action="" enctype="multipart/form-data">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <div class="form-group mb-3">
+            <input type="submit" class="btn btn-success" value="Send" name="send">
+        </div>
+    </form>
